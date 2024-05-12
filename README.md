@@ -51,3 +51,6 @@ Since this experiments yields multiple MTR and Finetune models, downloading pre-
 ## Contributing
 
 >📋  MIT
+
+## Authors' Note
+Please use this code only for social goods and positive impact.
