@@ -11,3 +11,7 @@
 
 # The experiments are done under RAM 512, A30 GPU X 4
 # You may be required to prepare at least 150GM (or >= 130GB) of RAM if you want to run with four A30 GPUs.
+	# Since our enviroment has a large RAM capacity (512 GB) we didn't need to load the dataset with lazy-loading.
+	# That's why the MTR training stage requires this much RAM capacity.
+	# If you can modify 'datamodule_mtr.py' and 'train_XXX.py' at 'models_mtr' directory regarding data loading to lazay loading 
+	# Which is loading data certain amount of rows per each steps from the csv FILES.
