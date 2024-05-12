@@ -1,0 +1,13 @@
+1) create your virtual environment
+2) instaill the requirements.txt
+   pip install -r requirements_cuda118.txt  (requirements_cuda118_if_the_fist_one_not_working.txt if it is not working)
+3) Go to 'dataset_mtr' and read instruction_dataset_mtr.txt'
+4) Go to 'models_mtr' and read 'instruction_models_mtr.txt
+5) Go to 'finetune' and read 'instruction_finetune.txt'
+6) Go to 'eval', then open and run 'Eval_Tabular.ipynb' **
+
+# The finetune result is already located at '/SOME_PATH/transformers_and_chemistry/finetune/evaluations'
+# So you can run 'Eval_Tabular.ipynb' ** without running 3)~5)
+
+# The experiments are done under RAM 512, A30 GPU X 4
+# You may be required to prepare at least 150GM (or >= 130GB) of RAM if you want to run with four A30 GPUs.

@@ -1,0 +1,7 @@
+1) move dir path to `transformers_and_chemistry` or the master dir for this project.
+2) python -m models_mtr.train_chemXXX
+
+You can select the configuration (config) of each transformer at `train_chemXXX.py`
+You can change the model and training hyper parameters at the directory `chemXXX_mtr`
+
+# We recommend to prepare 150GM of RAM for using 4 GPUS with NVIDIA A30

@@ -1,0 +1,6 @@
+1) move dir path to `transformers_and_chemistry` or the master dir for this project.
+2) python -m finetune.run_auto_XXX_bulk
+
+You can control the training hyperparameters like 'batch size', 'learning rate', 'epochs', and 'freeze the MTR model or not' with 'run_auto_XXX_bulk.py'
+The result data used for our paper is already located in the 'evaluations' folder in 'finetune' 
+So you can try to run "Eval_Tabular.ipynb" in the "eval" folder first.

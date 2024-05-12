@@ -1,0 +1,13 @@
+1) Open stage_1_create_canonical_smiles.ipynb and run the cells
+2) run stage_2_descriptors_for.py  (in a proper path)
+3) Open stage_3_preprocess_smiles_property.ipynb and run the cells
+
+
+In this experiment, we used ~25GB (26GB at max) of RAM with 10 cores for stage_2_descriptors.
+Although we used multiprocessing for stage_2, we still calculated each SMILE string's descriptions using for-loop.
+If you can calculate the descriptions using a vector process, then you will be able to reduce the RAM usage a lot.
+During the experiment, we checked that the DeepChem descriptor calculators still returned the same shape of the return array. So, You may be able to run this process with vector processing instead of for-loop.
+In other words, although the DeepChem descriptor calculators somehow return nan values, they will keep their return shape.
+
+Ex) SMILES (CO2) -> 207 descriptions (default)
+    Although one or more descriptions get nan, inf, or -inf, it will keep the original return shape with those 207 descriptions.
