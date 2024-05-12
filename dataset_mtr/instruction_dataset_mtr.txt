@@ -1,4 +1,4 @@
-1) Open stage_1_create_canonical_smiles.ipynb and run the cells
+1) Open stage_1_create_canonical_smiles.ipynb and run the cells (** You can skip this part if you want to use the csv file from github with "canonical_smiles_xxx.csv")
 2) run stage_2_descriptors_for.py  (in a proper path)
 3) Open stage_3_preprocess_smiles_property.ipynb and run the cells
 
